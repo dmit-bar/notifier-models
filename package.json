@@ -2,20 +2,13 @@
   "name": "@notifier/models",
   "version": "1.0.0",
   "description": "Модели приложения notifier",
-  "main": "",
-  "types": "index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./index.d.ts",
-      "types": "./index.d.ts"
-    }
-  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "*.d.ts",
-    "chat/*.d.ts",
-    "socket-events/*.d.ts"
+    "/dist"
   ],
   "scripts": {
+    "build": "tsc",
     "pretty": "prettier --config .prettierrc --ignore-path .prettierignore --write .",
     "lint": "eslint \"src/**\" --ext .ts,.tsx --fix",
     "fix": "yarn pretty && yarn lint",

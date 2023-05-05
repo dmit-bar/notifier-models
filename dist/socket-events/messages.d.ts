@@ -1,18 +1,14 @@
 import { IRoom } from "../chat";
-import { SocketEventsEnum } from "./events";
-
+import { SocketEventTypesEnum } from "./eventTypes";
 export interface IGeneralEvent {
-  eventType: SocketEventsEnum;
+    type: SocketEventTypesEnum;
 }
-
 export interface IUserMeta {
-  login: string;
+    login: string;
 }
-
 export interface INotifyNewConnectionRq extends IGeneralEvent {
-  payload: IUserMeta;
+    payload: IUserMeta;
 }
-
 export interface INotifyNewConnectionRs {
-  payload: IRoom[];
+    payload: IRoom[];
 }
