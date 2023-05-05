@@ -10,8 +10,6 @@
     }
   },
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "pretty": "prettier --config .prettierrc --ignore-path .prettierignore --write .",
     "lint": "eslint \"src/**\" --ext .ts,.tsx --fix",
     "fix": "yarn pretty && yarn lint",
