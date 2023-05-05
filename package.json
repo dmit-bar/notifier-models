@@ -9,6 +9,11 @@
       "types": "./index.d.ts"
     }
   },
+  "files": [
+    "*.d.ts",
+    "chat/*.d.ts",
+    "socket-events/*.d.ts"
+  ],
   "scripts": {
     "pretty": "prettier --config .prettierrc --ignore-path .prettierignore --write .",
     "lint": "eslint \"src/**\" --ext .ts,.tsx --fix",
