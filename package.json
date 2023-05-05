@@ -4,11 +4,6 @@
   "description": "Модели приложения notifier",
   "main": "",
   "types": "index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts"
-    }
-  },
   "files": [
     "*.d.ts",
     "chat/*.d.ts",
