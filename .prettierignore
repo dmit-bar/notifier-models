@@ -1,0 +1,12 @@
+*.*
+!*.js
+!*.ts
+!*.tsx
+!*.css
+!*.md
+!*.json
+
+!*.prettierrc
+
+node_modules/
+lib/
