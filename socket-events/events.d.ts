@@ -1,5 +1,3 @@
-enum SocketEventsEnum {
+export enum SocketEventsEnum {
   NEW_CONNECTION = "new-connection",
 }
-
-export { SocketEventsEnum };
