@@ -1,5 +1,8 @@
 node_modules/
-lib/
+
+# Временно закомментировано для установки в front приложении
+# lib/
+
 .DS_Store
 
 # Yarn
