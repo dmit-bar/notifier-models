@@ -2,8 +2,13 @@
   "name": "@notifier/models",
   "version": "1.0.0",
   "description": "Модели приложения notifier",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,9 +19,6 @@
     "postversion": "git push && git push --tags"
   },
   "keywords": [],
-  "files": [
-    "lib/**/*"
-  ],
   "author": "dmit.bar716",
   "license": "ISC",
   "devDependencies": {
