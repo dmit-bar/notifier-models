@@ -12,7 +12,7 @@
     "pretty": "prettier --config .prettierrc --ignore-path .prettierignore --write .",
     "lint": "eslint \"src/**\" --ext .ts,.tsx --fix",
     "fix": "yarn pretty && yarn lint",
-    "prepare": "npm run fix && npm run build",
+    "prepare": "yarn fix && yarn build",
     "postversion": "git push && git push --tags"
   },
   "keywords": [],
