@@ -11,8 +11,7 @@
     "build": "tsc",
     "pretty": "prettier --config .prettierrc --ignore-path .prettierignore --write .",
     "lint": "eslint \"src/**\" --ext .ts,.tsx --fix",
-    "fix": "yarn pretty && yarn lint",
-    "postinstall": "yarn build"
+    "fix": "yarn pretty && yarn lint"
   },
   "keywords": [],
   "author": "dmit.bar716",
