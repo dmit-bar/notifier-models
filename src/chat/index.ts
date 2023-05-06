@@ -12,3 +12,8 @@ export interface IMessage {
   authorName: string;
   message: string;
 }
+
+export interface IRoomMember {
+  login: string;
+  role: string;
+}
