@@ -2,6 +2,7 @@ export interface IRoom {
   uuid: string;
   title: string;
   description: string;
+  members: IRoomMember[];
   lastMessage?: Omit<IMessage, "roomUUID">;
 }
 
