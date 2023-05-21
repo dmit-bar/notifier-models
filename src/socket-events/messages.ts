@@ -6,7 +6,7 @@ export interface IGeneralEvent {
 }
 
 export interface IUserMeta {
-  payload: { login: string };
+  login: string;
 }
 
 export interface INotifyNewConnectionRq extends IGeneralEvent {
