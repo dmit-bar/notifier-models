@@ -6,7 +6,7 @@ export interface IGeneralEvent {
 }
 
 export interface IUserMeta {
-  login: string;
+  payload: { login: string };
 }
 
 export interface INotifyNewConnectionRq extends IGeneralEvent {
@@ -18,7 +18,7 @@ export interface INotifyNewConnectionRs {
 }
 
 export interface IGetMsgListRq {
-  roomUUID: string;
+  payload: { roomUUID: string };
 }
 
 export interface IGetMsgListRs {
