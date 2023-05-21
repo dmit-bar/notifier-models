@@ -1,4 +1,4 @@
-import { IRoom } from "../chat";
+import { IMessage, IRoom } from "../chat";
 import { SocketEventTypesEnum } from "./eventTypes";
 export interface IGeneralEvent {
     type: SocketEventTypesEnum;
@@ -11,4 +11,10 @@ export interface INotifyNewConnectionRq extends IGeneralEvent {
 }
 export interface INotifyNewConnectionRs {
     payload: IRoom[];
+}
+export interface IGetMsgListRq {
+    roomUUID: string;
+}
+export interface IGetMsgListRs {
+    payload: IMessage[];
 }
