@@ -12,6 +12,7 @@ export interface IMessage {
   authorID: string;
   authorName: string;
   message: string;
+  timestamp: Date;
 }
 
 export interface IRoomMember {
