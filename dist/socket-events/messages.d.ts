@@ -20,3 +20,6 @@ export interface IGetMsgListRq {
 export interface IGetMsgListRs {
     payload: IMessage[];
 }
+export interface INewMessage {
+    payload: IMessage;
+}
