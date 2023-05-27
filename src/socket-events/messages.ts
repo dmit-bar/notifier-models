@@ -26,7 +26,5 @@ export interface IGetMsgListRs {
 }
 
 export interface INewMessage {
-  payload: Omit<IMessage, "uuid"> & {
-    uuid?: string; // UUID does not exists at the moment of sending message from client
-  };
+  payload: IMessage;
 }
