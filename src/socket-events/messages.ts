@@ -25,10 +25,10 @@ export interface IGetMsgListRs {
   payload: IMessage[];
 }
 
-export interface INewMessageRq {
+export interface IClientMessage {
   payload: Omit<IMessage, "uuid" | "authorName">;
 }
 
-export interface INewMessageRs {
+export interface INewMessage {
   payload: IMessage;
 }
