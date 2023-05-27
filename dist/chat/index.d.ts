@@ -4,6 +4,7 @@ export interface IRoom {
     description: string;
     members: IRoomMember[];
     lastMessage?: Omit<IMessage, "roomUUID">;
+    draftMessage?: string;
 }
 export interface IMessage {
     uuid: string;
