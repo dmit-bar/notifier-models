@@ -4,7 +4,7 @@ export interface IGeneralEvent {
     type: SocketEventTypesEnum;
 }
 export interface IUserMeta {
-    login: string;
+    userUID: string;
 }
 export interface INotifyNewConnectionRq extends IGeneralEvent {
     payload: IUserMeta;

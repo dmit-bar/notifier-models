@@ -17,6 +17,6 @@ export interface IMessage {
 }
 
 export interface IRoomMember {
-  login: string;
+  userUID: string;
   role: string;
 }

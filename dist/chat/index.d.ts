@@ -15,6 +15,6 @@ export interface IMessage {
     timestamp: Date;
 }
 export interface IRoomMember {
-    login: string;
+    userUID: string;
     role: string;
 }
