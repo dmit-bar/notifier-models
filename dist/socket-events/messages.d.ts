@@ -21,7 +21,7 @@ export interface IGetMsgListRs {
     payload: IMessage[];
 }
 export interface IClientMessage {
-    payload: Omit<IMessage, "uuid" | "authorName">;
+    payload: Omit<IMessage, "uuid">;
 }
 export interface INewMessage {
     payload: IMessage;
