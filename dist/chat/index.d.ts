@@ -3,7 +3,7 @@ export interface IRoom {
     title: string;
     description: string;
     members: IRoomMember[];
-    lastMessage?: Omit<IMessage, "roomUUID">;
+    messages?: Omit<IMessage, "roomUUID">[];
     draftMessage?: string;
 }
 export interface IMessage {
